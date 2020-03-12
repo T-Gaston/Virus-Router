@@ -7,6 +7,7 @@ import About from './About';
 import Virus from './Virus';
 import { Container } from "semantic-ui-react";
 import Navbar from "./NavBar";
+import NoMatch from './NoMatch';
 
 
 
@@ -15,11 +16,12 @@ function App() {
     <>
     <Container>
       <Navbar />
-        {/* <Switch> */}
+        <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/About" component={About} />
           <Route exact path ="/Virus" component={Virus} />
-        {/* </Switch> */}
+          <Route component={NoMatch} />
+        </Switch>
       </Container>
     </>
   );
