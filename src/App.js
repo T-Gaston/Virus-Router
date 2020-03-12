@@ -8,6 +8,7 @@ import Virus from './Virus';
 import { Container } from "semantic-ui-react";
 import Navbar from "./NavBar";
 import NoMatch from './NoMatch';
+import VirusForm from "./VirusForm";
 
 
 

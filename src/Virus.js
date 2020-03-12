@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'semantic-ui-react';
+import VirusForm from './VirusForm'
 
 export default class Virus extends React.Component {
   state = {
@@ -9,11 +9,13 @@ export default class Virus extends React.Component {
       {id: 3, name:"Spanish Flu", body:"Yer Gonna Die"}
       ]};
 
+
+
   render(){
     return(
-        <div>
-          yo yo yo
-        </div>
-      )
-    }
+      <div>
+        <VirusForm />
+      </div>
+    )
+  }
 }
