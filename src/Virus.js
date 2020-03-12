@@ -1,4 +1,5 @@
 import React from 'react';
+import VirusForm from './VirusForm'
 
 export default class Virus extends React.Component {
   state = {
@@ -8,14 +9,12 @@ export default class Virus extends React.Component {
       {id: 3, name:"Spanish Flu", body:"Yer Gonna Die"}
       ]};
 
-  renderViruses = () => {
-    return this.state.viruses.map( virus => <Virus key={virus.id} {...virus} />)
-  };
+
 
   render(){
     return(
       <div>
-        { this.renderViruses() }
+        <VirusForm />
       </div>
     )
   }

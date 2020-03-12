@@ -7,6 +7,7 @@ import About from './About';
 import Virus from './Virus';
 import { Container } from "semantic-ui-react";
 import Navbar from "./NavBar";
+import VirusForm from "./VirusForm"
 
 
 
