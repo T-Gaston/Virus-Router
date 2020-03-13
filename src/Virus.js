@@ -1,21 +1,10 @@
 import React from 'react';
-import VirusForm from './VirusForm'
 
-export default class Virus extends React.Component {
-  state = {
-    virus: [
-      {id: 1, name:"Covid-19", body:"Scary text here"},
-      {id: 2, name:"Ebola", body:"Spooky Stuff"},
-      {id: 3, name:"Spanish Flu", body:"Yer Gonna Die"}
-      ]};
+const Virus = ({id, name, body}) => (
+  <div>
+    Name: {name} 
+    Body: {body}
+  </div>
+)
 
-
-
-  render(){
-    return(
-      <div>
-        <VirusForm />
-      </div>
-    )
-  }
-}
+export default Virus
